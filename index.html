@@ -26,15 +26,15 @@
           <defs>
             <radialGradient id="beeBody" cx=".38" cy=".32" r=".75"><stop offset="0" stop-color="#ffe680"/><stop offset=".6" stop-color="#f9c623"/><stop offset="1" stop-color="#e09a00"/></radialGradient>
             <radialGradient id="beeHead" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#ffeb94"/><stop offset=".7" stop-color="#f9c623"/><stop offset="1" stop-color="#e3a106"/></radialGradient>
-            <linearGradient id="beeWing" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".95"/><stop offset="1" stop-color="#e6f2fb" stop-opacity=".75"/></linearGradient>
-            <clipPath id="beeClip"><ellipse cx="96" cy="112" rx="60" ry="48"/></clipPath>
+            <linearGradient id="Wing" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".95"/><stop offset="1" stop-color="#e6f2fb" stop-opacity=".75"/></linearGradient>
+            <clipPath id="Clip"><ellipse cx="96" cy="112" rx="60" ry="48"/></clipPath>
           </defs>
           <!-- back wing -->
-          <g class="wing wing-back"><ellipse cx="92" cy="50" rx="30" ry="42" transform="rotate(-24 92 50)" fill="url(#beeWing)" stroke="#2a2416" stroke-width="3"/></g>
+          <g class="wing wing-back"><ellipse cx="92" cy="50" rx="30" ry="42" transform="rotate(-24 92 50)" fill="url(#Wing)" stroke="#2a2416" stroke-width="3"/></g>
           <!-- stinger -->
           <path d="M38 118 L18 124 L38 132Z" fill="#2a2416"/>
           <!-- body with stripes -->
-          <ellipse cx="96" cy="112" rx="60" ry="48" fill="url(#beeBody)" stroke="#2a2416" stroke-width="4"/>
+          <ellipse cx="96" cy="112" rx="60" ry="48" fill="url(#Body)" stroke="#2a2416" stroke-width="4"/>
           <g clip-path="url(#beeClip)" fill="#2a2416">
             <path d="M58 60 Q48 112 58 164 L76 164 Q66 112 76 60Z"/>
             <path d="M92 60 Q82 112 92 164 L110 164 Q100 112 110 60Z"/>
@@ -60,7 +60,7 @@
       </span>
       <span class="balloon-tag">
         <span class="tag-hole" aria-hidden="true"></span>
-        <span class="tag-text">Tap to bee-gin</span>
+        <span class="tag-text">To BEE or Not to BEE</span>
       </span>
     </button>
   </section>
