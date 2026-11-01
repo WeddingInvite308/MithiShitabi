@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mithi Shita-bee · [Mom-to-be's name]</title>
+  <meta name="theme-color" content="#fbf3df">
+
+  <!-- Link preview (WhatsApp, iMessage…). After hosting, change this to the full https:// address of images/opening.jpg -->
+  <meta property="og:title" content="Bee our guest at the Mithi Shita-bee">
+  <meta property="og:description" content="Tap to bee-gin your invitation.">
+  <meta property="og:image" content="images/opening.jpg">
+
+  <link rel="preload" as="image" href="images/opening-phone.jpg" media="(max-aspect-ratio: 3/5)">
+  <link rel="preload" as="image" href="images/opening.jpg" media="(min-aspect-ratio: 3/5)">
+  <link rel="stylesheet" href="style.css?v=bee-53">
+</head>
+<body>
+
+  <!-- ============ Page 1: the opening, with the balloon ============ -->
+  <section class="opening" id="opening" aria-label="Baby shower invitation">
+    <div class="opening-art" aria-hidden="true"></div>
+    <button class="balloon" id="openBtn" type="button" aria-label="Tap to open the invite">
+      <span class="bee-carrier" aria-hidden="true">
+        <svg class="bee-hero" viewBox="0 0 220 190">
+          <defs>
+            <radialGradient id="beeBody" cx=".38" cy=".32" r=".75"><stop offset="0" stop-color="#ffe680"/><stop offset=".6" stop-color="#f9c623"/><stop offset="1" stop-color="#e09a00"/></radialGradient>
+            <radialGradient id="beeHead" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#ffeb94"/><stop offset=".7" stop-color="#f9c623"/><stop offset="1" stop-color="#e3a106"/></radialGradient>
+            <linearGradient id="beeWing" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".95"/><stop offset="1" stop-color="#e6f2fb" stop-opacity=".75"/></linearGradient>
+            <clipPath id="beeClip"><ellipse cx="96" cy="112" rx="60" ry="48"/></clipPath>
+          </defs>
+          <!-- back wing -->
+          <g class="wing wing-back"><ellipse cx="92" cy="50" rx="30" ry="42" transform="rotate(-24 92 50)" fill="url(#beeWing)" stroke="#2a2416" stroke-width="3"/></g>
+          <!-- stinger -->
+          <path d="M38 118 L18 124 L38 132Z" fill="#2a2416"/>
+          <!-- body with stripes -->
+          <ellipse cx="96" cy="112" rx="60" ry="48" fill="url(#beeBody)" stroke="#2a2416" stroke-width="4"/>
+          <g clip-path="url(#beeClip)" fill="#2a2416">
+            <path d="M58 60 Q48 112 58 164 L76 164 Q66 112 76 60Z"/>
+            <path d="M92 60 Q82 112 92 164 L110 164 Q100 112 110 60Z"/>
+          </g>
+          <ellipse cx="80" cy="86" rx="16" ry="8" transform="rotate(-20 80 86)" fill="#fff" opacity=".45"/>
+          <!-- little legs -->
+          <path d="M82 158 q-4 10 2 14 M104 158 q0 10 6 12" stroke="#2a2416" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <!-- front wing -->
+          <g class="wing wing-front"><ellipse cx="116" cy="54" rx="32" ry="46" transform="rotate(16 116 54)" fill="url(#beeWing)" stroke="#2a2416" stroke-width="3"/>
+            <path d="M112 30 q10 14 6 34" stroke="#cfe2f0" stroke-width="2" fill="none" stroke-linecap="round"/></g>
+          <!-- head -->
+          <circle cx="160" cy="100" r="38" fill="url(#beeHead)" stroke="#2a2416" stroke-width="4"/>
+          <!-- antennae -->
+          <path d="M150 64 Q142 34 128 26" stroke="#2a2416" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="127" cy="25" r="6" fill="#2a2416"/>
+          <path d="M172 64 Q182 34 198 30" stroke="#2a2416" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="199" cy="29" r="6" fill="#2a2416"/>
+          <!-- face -->
+          <ellipse cx="150" cy="96" rx="7.5" ry="9.5" fill="#2a2416"/><ellipse cx="176" cy="96" rx="7.5" ry="9.5" fill="#2a2416"/>
+          <circle cx="152.5" cy="92" r="3" fill="#fff"/><circle cx="178.5" cy="92" r="3" fill="#fff"/>
+          <circle cx="141" cy="112" r="7" fill="#ff9e8a" opacity=".6"/><circle cx="186" cy="112" r="7" fill="#ff9e8a" opacity=".6"/>
+          <path d="M154 114 Q163 123 172 114" stroke="#2a2416" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        <svg class="bee-string" viewBox="0 0 40 90"><path d="M20 0 C12 18 28 30 20 46 C13 60 26 72 20 90" fill="none" stroke="#b8902f" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </span>
+      <span class="balloon-tag">
+        <span class="tag-hole" aria-hidden="true"></span>
+        <span class="tag-text">Tap to bee-gin</span>
+      </span>
+    </button>
+  </section>
+
+  <div class="stage" id="stage">
+  <div class="sheet" id="sheet">
+
+  <!-- ============ Page 2: the invitation (scrapbook collage) ============ -->
+  <main class="invite" id="invite">
+    <!-- tiny baby things sprinkled around the page -->
+    <div class="sprinkles" aria-hidden="true">
+      <img class="sticker" src="images/stickers/honeycomb-block.webp" alt="" width="360" height="315" style="left:34px;top:1424px;width:110px;rotate:-6deg;--d:0.6s">
+      <img class="sticker swing-hive" src="images/stickers/hanginghive.webp" alt="" width="200" height="199" style="left:262px;top:6px;width:120px;rotate:0deg;--d:0s">
+      <img class="sticker " src="images/stickers/combhex.webp" alt="" width="135" height="134" style="left:178px;top:96px;width:62px;rotate:-10deg;--d:1.3s">
+      <img class="sticker " src="images/stickers/log.webp" alt="" width="225" height="170" style="left:-16px;top:760px;width:92px;rotate:-8deg;--d:0.7s">
+      <img class="sticker " src="images/stickers/combflower.webp" alt="" width="149" height="164" style="left:300px;top:1052px;width:56px;rotate:10deg;--d:2.0s">
+      <img class="sticker flyer" src="images/stickers/beedrip.webp" alt="" width="70" height="147" style="left:174px;top:1438px;width:48px;rotate:0deg;--d:0.4s">
+      <img class="sticker " src="images/stickers/bear.webp" alt="" width="273" height="324" style="left:14px;top:1950px;width:170px;rotate:0deg;--d:1.1s">
+      <img class="sticker flyer" src="images/stickers/beesmall1.webp" alt="" width="88" height="96" style="left:344px;top:64px;width:36px;rotate:12deg;--d:0.3s">
+      <img class="sticker" src="images/stickers/flower.webp" alt="" width="75" height="70" style="left:350px;top:150px;width:26px;rotate:0deg;--d:1.2s">
+      <img class="sticker" src="images/stickers/dipper.webp" alt="" width="73" height="105" style="left:300px;top:384px;width:30px;rotate:28deg;--d:0.8s">
+      <img class="sticker" src="images/stickers/daisybee.webp" alt="" width="100" height="103" style="left:12px;top:396px;width:46px;rotate:-8deg;--d:1.7s">
+      <img class="sticker" src="images/stickers/sunflower.webp" alt="" width="163" height="191" style="left:336px;top:560px;width:50px;rotate:10deg;--d:0.5s">
+      <img class="sticker flyer" src="images/stickers/beesmall2.webp" alt="" width="63" height="69" style="left:4px;top:700px;width:26px;rotate:8deg;--d:2.4s">
+      <img class="sticker" src="images/stickers/flower.webp" alt="" width="75" height="70" style="left:350px;top:860px;width:24px;rotate:0deg;--d:1.0s">
+      <img class="sticker" src="images/stickers/clover.webp" alt="" width="110" height="174" style="left:2px;top:940px;width:40px;rotate:-6deg;--d:1.9s">
+      <img class="sticker flyer" src="images/stickers/beesmall1.webp" alt="" width="88" height="96" style="left:344px;top:1010px;width:30px;rotate:-10deg;--d:0.2s">
+      <img class="sticker" src="images/stickers/jardipper.webp" alt="" width="139" height="180" style="left:330px;top:1484px;width:36px;rotate:8deg;--d:1.4s">
+      <img class="sticker flyer" src="images/stickers/beesmall2.webp" alt="" width="63" height="69" style="left:360px;top:1336px;width:24px;rotate:-12deg;--d:2.6s">
+      <img class="sticker" src="images/stickers/flower.webp" alt="" width="75" height="70" style="left:182px;top:1098px;width:22px;rotate:0deg;--d:0.6s">
+      <img class="sticker flyer" src="images/stickers/beesmall3.webp" alt="" width="82" height="85" style="left:8px;top:1500px;width:28px;rotate:10deg;--d:1.1s">
+      <img class="sticker" src="images/stickers/comb.webp" alt="" width="152" height="176" style="left:338px;top:1800px;width:40px;rotate:12deg;--d:2.2s">
+      <img class="sticker" src="images/stickers/honeypot.webp" alt="" width="167" height="176" style="left:30px;top:1838px;width:54px;rotate:-8deg;--d:0.9s">
+      <img class="sticker flyer" src="images/stickers/beesmall1.webp" alt="" width="88" height="96" style="left:300px;top:1846px;width:30px;rotate:14deg;--d:1.6s">
+    </div>
+
+    <!-- 1. envelope section retained empty -->
+    <section class="envelope-zone" aria-label="Envelope area">
+      <img class="invitation-envelope" src="images/letter.png" alt="Honey-colored invitation envelope">
+      <img class="honeypot" src="images/honeypot.png" alt="Honey pot with daisies and bees">
+    </section>
+
+    <!-- 2. invitation card -->
+    <div class="letter">
+      <section class="main-card" aria-label="Invitation">
+        <img class="bismillah" src="images/bismillah.webp" alt="Bismillah ir-Rahman ir-Rahim" width="400" height="160">
+        <svg class="divider" viewBox="0 0 220 22" aria-hidden="true"><line x1="0" y1="11" x2="88" y2="11" stroke="#c9a03c"/><line x1="132" y1="11" x2="220" y2="11" stroke="#c9a03c"/></svg>
+        <p class="blessing">By the Grace of Allah,<br>Vasilat-e-Panjatan Pak (A.S.)<br>Janab-e-Abbas (A.S.) and with the Dua Mubarak of<br>Syedna Ali Qadr Mufaddal Saifuddin (T.U.S.)</p>
+        <svg class="divider" viewBox="0 0 220 22" aria-hidden="true"><line x1="0" y1="11" x2="88" y2="11" stroke="#c9a03c"/><line x1="132" y1="11" x2="220" y2="11" stroke="#c9a03c"/></svg>
+        <p class="invited">Please bee our guest at the</p>
+        <h1 class="mithi">Mithi Shita-bee</h1>
+        <p class="on-line"><span>on</span></p>
+        <div class="date-strip"><div class="side">[Month]</div><div class="day">[14]</div><div class="side">[4:00 PM]</div></div>
+        <p class="venue">[Venue name]<br>[Area, City]</p>
+        <a class="pill" href="#" target="_blank" rel="noopener noreferrer">View location</a>
+        <p class="presence">Your presence will bee a blessing for us.</p>
+      </section>
+    </div>
+
+    <!-- 3. boy or girl + RSVP basket -->
+    <section class="duo">
+      <div class="card gold-border guess-card">
+        <h2 class="script">What will baby bee?</h2>
+        <p class="caps lead">Buzz in your guess</p>
+        <div class="guess-row">
+          <button class="guess-btn girl" type="button" data-guess="girl" aria-pressed="false" aria-label="Girl"><img class="bee-pick" src="images/stickers/bee-girl.webp" alt="" width="240" height="285"><span class="word">Girl</span></button>
+          <button class="guess-btn boy" type="button" data-guess="boy" aria-pressed="false" aria-label="Boy"><img class="bee-pick" src="images/stickers/bee-boy.webp" alt="" width="314" height="287"><span class="word">Boy</span></button>
+        </div>
+        <p class="tap-hint" id="guessResult" aria-live="polite">Tap a bee to vote</p>
+      </div>
+      <div class="rsvp-zone">
+        <a class="basket tap-me" href="#rsvp" aria-label="RSVP"><img src="images/stickers/hot-air-balloon.webp" alt="Sunflower hot-air balloon" width="410" height="580"></a>
+        <p class="script kindly">Kindly<span>RSVP</span></p>
+        <p class="tap-hint">Bee a dear &amp;<br>tap the balloon</p>
+      </div>
+    </section>
+
+    <!-- 4. mark your calendar -->
+    <section class="calendar" aria-label="Mark your calendar">
+      <div class="cal-panel">
+        <div class="cal-sprig" aria-hidden="true"><span></span><img src="images/stickers/gold-sunflower.webp" alt=""><span></span></div>
+        <h2 class="script">Save the date</h2>
+        <p class="caps sweet">Bee there!</p>
+        <p class="foil cal-date">[Saturday, 14 November 2026] · [4:00 PM]</p>
+        <div class="count" id="countdown" role="timer" aria-label="Time until the Mithi Shita-bee">
+          <div class="tile"><div class="num" data-unit="d">00</div><div class="unit">Days</div></div><span class="colon">:</span>
+          <div class="tile"><div class="num" data-unit="h">00</div><div class="unit">Hours</div></div><span class="colon">:</span>
+          <div class="tile"><div class="num" data-unit="m">00</div><div class="unit">Mins</div></div><span class="colon">:</span>
+          <div class="tile"><div class="num" data-unit="s">00</div><div class="unit">Secs</div></div>
+        </div>
+        <p class="count-done" id="countDone" hidden>Today's the bee-g day!</p>
+        <div class="cal-sprig flip" aria-hidden="true"><span></span><img src="images/stickers/gold-sunflower.webp" alt=""><span></span></div>
+      </div>
+    </section>
+
+    <!-- 5. footer -->
+    <footer class="footer">
+      <p class="script love">With love,</p>
+      <p class="caps hosts">[Host names]</p>
+    </footer>
+  </main>
+
+  <!-- Page 3: RSVP -->
+  <section class="rsvp-page" id="rsvp" aria-labelledby="rsvpTitle" hidden>
+    <div class="scallop">
+      <img class="rsvp-umbrella" src="images/stickers/umbrella.webp" alt="" width="314" height="360">
+      <img class="rsvp-stroller" src="images/stickers/pram.webp" alt="" width="354" height="360">
+      <div class="scallop-inner">
+        <form id="rsvpForm" novalidate>
+          <h2 class="script rsvp-title" id="rsvpTitle" tabindex="-1">Will you bee there?</h2>
+          <p class="caps rsvp-by">Please buzz back by [RSVP date]</p>
+          <label class="field-label" for="guestName">Your name <span aria-hidden="true">*</span></label>
+          <input class="field" id="guestName" name="name" type="text" autocomplete="name" required>
+          <p class="field-error" id="nameError" hidden>Please tell us who's buzzing by.</p>
+          <fieldset class="choice-group">
+            <legend class="field-label">Will you bee joining us? <span aria-hidden="true">*</span></legend>
+            <label class="choice"><input type="radio" name="attending" value="Yes" id="attYes" required><span>Absolutely, I'll bee there!</span></label>
+            <label class="choice"><input type="radio" name="attending" value="No" id="attNo"><span>Sadly, I can't bee there</span></label>
+          </fieldset>
+          <p class="field-error" id="attError" hidden>Please pick one.</p>
+          <div class="guests-row" id="guestsRow">
+            <label class="field-label" for="guestCount">How many in your hive, including you?</label>
+            <select class="field" id="guestCount" name="guests"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+          </div>
+          <label class="field-label" for="guestWish">A sweet wish for baby bee <span class="optional">(optional)</span></label>
+          <textarea class="field" id="guestWish" name="wish" rows="2"></textarea>
+          <button class="send" type="submit" id="sendBtn">Buzz it over</button>
+          <p class="send-note">Your reply flies straight to [host name].</p>
+        </form>
+        <div class="thanks" id="thanks" hidden tabindex="-1">
+          <p class="script thanks-title" id="thanksTitle">Thank you!</p>
+          <p class="thanks-text" id="thanksText">We can't wait to bee with you!</p>
+        </div>
+        <a class="back-link" href="#invite">Back to the hive</a>
+      </div>
+    </div>
+  </section>
+  </div>
+  </div>
+  <script src="script.js?v=bee-53"></script>
+</body>
+</html>
